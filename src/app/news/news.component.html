@@ -1,0 +1,35 @@
+<div id="carouselExampleCaptions" class="container ps-0 carousel slide " data-bs-ride="carousel">
+    <h6 class="fw-semibold fs-5 mb-2"> Latest News:</h6>
+    
+    <div class="carousel-inner">
+      <div class="carousel-item active" data-bs-interval="2000">
+        <img src="assets/image1.jpeg" class="d-block w-100 mx-auto img-fluid" alt="image1">
+        <div class="position-absolute bottom-0 start-0 carousel-caption py-2 ps-4 transparent text-start text-dark w-100">
+          <p class="fw-bold fs-6 mb-0"> Best Spots For A Summer Vacation</p>
+          <p class="pt-0"> Check out these spots where we provide you with a discount code! Type VACATION when inserting the promo code and behold the surprise!</p>
+        </div>
+      </div>
+  
+      <div class="carousel-item" data-bs-interval="2000">
+        <img src="assets/image2.jpeg" class="d-block w-100" alt="Image2">
+        <div class="position-absolute bottom-0 start-0 carousel-caption py-2 ps-4 transparent text-start text-dark w-100">
+          <p class="fw-bold fs-6 mb-0"> Best Spots For A Summer Vacation</p>
+          <p class="pt-0"> Check out these spots where we provide you with a discount code! Type VACATION when inserting the promo code and behold the surprise!</p>
+        </div>
+      </div>
+  
+      <div class="carousel-item" data-bs-interval="2000">
+        <img src="assets/image3.jpeg" class="d-block w-100 mx-auto img-fluid" alt="image3">
+        <div class="position-absolute bottom-0 start-0 carousel-caption py-2 ps-4 transparent text-start text-dark w-100">
+          <h5 class=""> Best Spots For A Summer Vacation</h5>
+          <p class=""> Check out these spots where we provide you with a discount code! Type VACATION when inserting the promo code and behold the surprise!</p>
+        </div>
+      </div>
+    </div>
+    <div class=" position-relative  d-flex justify-content-center ms-4 mt-2 "><!--position-relative-->
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0"  [class.activee]='index===0' (click)="activebutton(0)" class=" dots bgcol m-1 activee " aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" [class.activee]='index===1' (click)="activebutton(1)" class="swap dots bgcol m-1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"  [class.activee]='index===2'  (click)="activebutton(2)"  class="swap dots bgcol m-1" aria-label="Slide 3"></button>
+    </div>
+    
+  </div>

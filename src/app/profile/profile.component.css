@@ -1,0 +1,26 @@
+.profile-image {
+    width: 50px;
+    height: 50px;
+       border-radius: 50%; 
+       object-fit: cover; 
+       z-index: 1;
+     }
+   .bgcol{   background-color:    hsla(180, 3%, 91%, 0.879);
+     }
+     
+    .profile{
+       background-color:  hsla(180, 7%, 95%, 0.879);
+    }
+    .sfont{
+       font-size: .75rem;
+    }
+    .bigfont{
+       font-size: 4.5rem;
+     }
+     .ff{
+       font-size:1.1rem ; 
+       font-weight: 700;
+     }
+     .f{
+        font-size: .90rem;
+     }

@@ -1,0 +1,50 @@
+<div class="container ps-0  my-5  border-bottom border-3 shadow-md bgcol  rounded-5  ">
+    <div class="row align-items-start d-flex">
+      <div  class="col-sm-12 col-md-12 col-lg-12  ">
+        <nav class="navbar navbar-expand-lg">
+          <div class="container pt-2 h-75 ">
+            <div class="d-flex align-items-center ps-1 ">
+              <i class="fa-solid fa-list-check text-success  fs-2 me-2"></i>
+              <p class="mb-0 fs-5  ps-1">Vacation Requests</p>
+            </div>
+            
+            <div class="position-relative me-4 ">
+              <input type="text" id="searchInput" [(ngModel)]="searchText" class="form-control rounded-5 px-5 border border-1 border-dark text-secondary ms-" placeholder="Search...">
+              <i class="fas fa-search position-absolute top-50 text-success  fs-5 start-0 translate-middle-y ms-3"></i>
+            </div>
+          </div>
+        
+        </nav>
+        
+<hr class="flex-grow-1 ms-3 my-1 me-4" style="border: 1px solid black">
+   <div class="row mt-3 ms-3" id="cards-container">
+    @for (card of cardData; track card) {
+        <div class="col-lg-3 col-md-6 col-sm-6" >
+          <div class="card rounded-0 ms-1 shadow-sm pt-1"  style="width: 15rem;" data-name="Ahmad" style="width: 15rem;" data-name="Ahmad">
+            <div class="p-1 text-center">
+              <img [src]="card.image" class="img-fluid rounded-circle mt-2" alt="Profile Image" style="max-width: 85px; max-height: 85px;">
+              <h6 class="card-title"   [innerHTML]="card.name | searchpipe: searchText"></h6>
+            </div>
+            <div class="ps-4 sfont text-secondary">
+              <p class="card-text mb-2">Submitted on: <br><span class="fw-bold">{{ card.submitted }}</span></p>
+              <p class="card-text mb-2">Duration: <br><span class="fw-bold">{{ card.duration }}</span></p>
+              <p class="card-text">Salary: <br><span class="fw-bold">{{ card.salary }}</span></p>
+            </div>
+            <div class="ps-3 my-3">
+              <a class="btn btn-outline-success fw-semibold btn-sm px-4 py-0 me-1" href="#">Decline</a>
+              <a href="#" class="btn btn-success fw-semibold btn-sm px-4 py-0">Approve</a>
+            </div>
+          </div>
+        </div>}
+   </div>    
+   </div>
+  
+     <div class="row">
+      <div class="col-12   h-20 text-end">
+        <a href="viwe_more.html" class="btn fw-semibold text-success">View More &gt;</a>
+      </div>
+     </div>
+   </div>  
+  </div>
+  
+ 
